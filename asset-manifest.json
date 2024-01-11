@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/WildSongs/static/css/main.f0e0b10e.css",
+    "main.js": "/WildSongs/static/js/main.36e3771a.js",
+    "static/js/289.e1d7a0e1.chunk.js": "/WildSongs/static/js/289.e1d7a0e1.chunk.js",
+    "static/js/845.b3e0db2a.chunk.js": "/WildSongs/static/js/845.b3e0db2a.chunk.js",
+    "static/media/music.jpg": "/WildSongs/static/media/music.45ecec9d206ac20937c7.jpg",
+    "static/media/playlist.png": "/WildSongs/static/media/playlist.b6d8adcdf1b0964d2061.png",
+    "index.html": "/WildSongs/index.html",
+    "main.f0e0b10e.css.map": "/WildSongs/static/css/main.f0e0b10e.css.map",
+    "main.36e3771a.js.map": "/WildSongs/static/js/main.36e3771a.js.map",
+    "289.e1d7a0e1.chunk.js.map": "/WildSongs/static/js/289.e1d7a0e1.chunk.js.map",
+    "845.b3e0db2a.chunk.js.map": "/WildSongs/static/js/845.b3e0db2a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0e0b10e.css",
+    "static/js/main.36e3771a.js"
+  ]
+}
