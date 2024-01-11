@@ -1,0 +1,95 @@
+#latestImg {
+    height: 100%;
+    width: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+#gradent-div {
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8688725490196079) 19%, rgba(40, 40, 40, 0.7624299719887955) 39%, rgba(123, 123, 123, 0.375875350140056) 57%, rgba(158, 158, 158, 0.2582282913165266) 84%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+
+#adjus {
+    position: absolute;
+    left: 38%;
+    transform: translateX(-50%);
+    z-index: 2;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    top: 50%;
+}
+
+
+#cardrow {
+    position: absolute;
+    top: 675px;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    #adjus {
+        font-size: 18px;
+        top: 190px;
+        left: 35%;
+    }
+
+    #latestImg {
+        height: auto;
+        max-width: 100%;
+    }
+
+    #cardrow {
+        top: 400px;
+    }
+
+
+
+}
+
+@media (max-width: 600px) {
+    #latestImg {
+        height: 300px;
+    }
+
+    #adjus {
+        font-size: 16px;
+        top: 190px;
+        left: 35%;
+    }
+
+    #cardrow {
+        top: 300px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #latestImg {
+        height: 500px;
+    }
+
+    #adjus {
+        top: 360px;
+        left: 35%;
+    }
+
+    #cardrow {
+        top: 505px;
+    }
+
+}

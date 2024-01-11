@@ -1,0 +1,71 @@
+#topNavbar{
+    background-color: black;
+    border-radius: 5px;
+    margin: 14px 15px 14px 200px;
+    z-index: 2;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top:5px;
+    width: 85%;
+    transition: top 0.3s ease;
+}
+
+
+#cardrow {
+    position: absolute;
+    top: 765px;
+    width: 88%;
+    left: 11%;
+    margin-bottom: 100px;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    #cardrow {
+        top: 400px;
+        width: 100%;
+        left: 0;
+    }
+
+
+    #topNavbar{
+        margin: 14px 15px;
+        width: 95%;
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    #cardrow {
+        top: 300px;
+        width: 100%;
+        left: 0;
+    }
+
+    #topNavbar{
+        margin: 14px 15px;
+        width: 95%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    #cardrow {
+        top: 505px;
+        width: 100%;
+        left: -55px;
+    }
+
+    #topNavbar{
+        margin: 14px 15px;
+        width: 95%;
+    }
+
+}

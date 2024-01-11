@@ -3,13 +3,40 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-slider": "^1.1.2",
+    "@radix-ui/themes": "^2.0.3",
+    "@supabase/auth-helpers-nextjs": "^0.8.7",
+    "@supabase/auth-helpers-react": "^0.4.2",
+    "@supabase/auth-ui-react": "^0.4.6",
+    "@supabase/auth-ui-shared": "^0.1.8",
+    "@supabase/supabase-auth-helpers": "^1.4.2",
+    "@supabase/supabase-js": "^2.39.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.2",
+    "gh-pages": "^6.1.1",
+    "js-cookie": "^3.0.5",
+    "next": "^14.0.4",
+    "prop-types": "^15.8.1",
+    "query-string": "^8.1.0",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.9.2",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.49.2",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^4.12.0",
+    "react-router-dom": "^6.20.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-top-loading-bar": "^2.3.1",
+    "stripe": "^14.10.0",
+    "uniqid": "^5.4.0",
+    "universal-cookie": "^7.0.0",
+    "use-sound": "^4.0.1",
+    "web-vitals": "^2.1.4",
+    "zustand": "^4.4.7"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,5 +61,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/uniqid": "^5.3.4",
+    "supabase": "^1.127.3",
+    "tailwindcss": "^3.4.0"
   }
 }
