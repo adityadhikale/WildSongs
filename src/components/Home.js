@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Latest from './Latest';
 
 const Home = (props) => {

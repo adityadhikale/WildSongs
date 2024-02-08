@@ -1,5 +1,6 @@
 import React from 'react'
 import {FaPlay} from 'react-icons/fa';
+
 import '../assets/styles/PlayButton.css'
 
 const PlayButton = () => {

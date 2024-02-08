@@ -1,7 +1,8 @@
 "use client";
 
-import { MyUserCotextProvider } from "../hooks/useUser.tsx";
 import React from 'react';
+
+import { MyUserCotextProvider } from "../hooks/useUser.tsx";
 
 interface UserProviderProps {
     children: React.ReactNode;

@@ -1,5 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+
+
 import { useUser } from '../hooks/useUser.tsx';
 import useUploadModal from '../hooks/useUploadModal.tsx';
 import SongItem from './Songitem.tsx';
@@ -26,10 +28,10 @@ const Library = ({ songs }) => {
         </p>
       ) : (
         <>
-          <div className='text-center' style={{overflow:'hidden'}}>
+          <div className='text-center' >
             <button type="button" onClick={onClick} className="btn" style={{ color: 'white', backgroundColor: '#DC1354', cursor: 'pointer', marginTop: '20px', borderRadius: '50px', border: 'none' }}>Upload Song</button>
           </div>
-          <div className='cards container' style={{ marginLeft: '7%' , overflow:'hidden'}}>
+          <div className='cards ' style={{ marginLeft: '5%' , overflow:'hidden'}}>
             <div className='mx-4 my-4 row justify-content-center'>
               {songs.map((item, index) => (
                 <div className='col-lg-3 col-md-4 col-sm-6 col-12 adjus' key={index} >

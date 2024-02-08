@@ -1,4 +1,5 @@
 import React from 'react';
+
 import '../assets/styles/Player.css';
 
 const Slider = ({ value, onChange }) => {

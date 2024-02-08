@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import '../assets/styles/Player.css';
 import { BsPauseFill, BsPlayFill } from 'react-icons/bs';
-import useLoadImage from '../hooks/useLoadimage.tsx';
 import { AiFillStepBackward, AiFillStepForward } from 'react-icons/ai';
 import { HiSpeakerWave, HiSpeakerXMark } from 'react-icons/hi2';
+import useSound from 'use-sound';
+
+import '../assets/styles/Player.css';
+import useLoadImage from '../hooks/useLoadimage.tsx';
 import Slider from './Slider.js';
 import usePlayer from '../hooks/usePlayer.tsx';
-import useSound from 'use-sound';
 
 const PlayerContent = ({ song, songUrl }) => {
     const imagePath = useLoadImage(song);

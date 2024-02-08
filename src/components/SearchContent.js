@@ -1,4 +1,5 @@
 import React from 'react'
+
 import PageContent from './PageContent'
 
 const SearchContent = ({ songs, setProgress }) => {

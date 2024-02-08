@@ -1,4 +1,5 @@
 import React from 'react';
+
 import '../assets/styles/Carditem.css';
 import Heart from './Heart.js';
 import { Song } from '../types.ts';
@@ -15,7 +16,7 @@ const SongItem: React.FC<CarditemProps> = ({ data, onClick, userId }) => {
   const imagePath = useLoadImage(data);
   
   return (
-    <div className='card my-3' style={{ width: '15rem', cursor: 'pointer' }} onClick={() => onClick(data.id.toString())}>
+    <div className='card my-3' style={{ width: '15rem', cursor: 'pointer' }}>
       <div
         className="card-img"
         style={{
@@ -25,6 +26,7 @@ const SongItem: React.FC<CarditemProps> = ({ data, onClick, userId }) => {
           height: '235px',
           width:'15rem'
         }}
+        onClick={() => onClick(data.id.toString())}
       ></div>
       <div className="card-body">
         <div className='d-flex justify-content-between'>

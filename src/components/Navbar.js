@@ -1,15 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
+import queryString from 'query-string';
+import { useSupabaseClient } from '@supabase/auth-helpers-react';
+
 import logo from '../assets/images/logo.png';
 import Cardrow from './Cardrow';
 import '../assets/styles/Navbar.css'
 import useAuthModal from '../hooks/useAuthModal.tsx';
-import { useSupabaseClient } from '@supabase/auth-helpers-react';
 import { useUser } from '../hooks/useUser.tsx';
 import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import getSongsByTitle from '../actions/getSongsByTitle.ts';
 import useDebounce from '../hooks/useDebounce.tsx';
-import queryString from 'query-string';
 import SearchContent from './SearchContent.js';
 
 
@@ -64,7 +65,7 @@ const Navbar = (props) => {
 
                 // eslint-disable-next-line
                 const url = queryString.stringifyUrl({
-                    url: '/WildSongs',
+                    url: '/',
                     query: query,
                 });
 
@@ -91,13 +92,15 @@ const Navbar = (props) => {
 
     const handleLogout = async () => {
         const { error } = await supabaseClient.auth.signOut();
-        navigate('/WildSongs', { replace: true });
+        navigate('/', { replace: true });
 
         if (error) {
             toast.error(error.message);
         } else {
             toast.success('Successfully logged out!');
-            window.location.reload();
+            // setTimeout(() => {
+            //     window.location.reload();
+            //   }, 2000)
         }
     };
 
@@ -143,8 +146,6 @@ const Navbar = (props) => {
                                         backgroundColor: '#DC1354',
                                         color: 'white',
                                     }}
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal"
                                     id='loginbtn'
                                     onClick={AuthModal.onOpen}
                                 >

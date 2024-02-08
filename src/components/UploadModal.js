@@ -1,13 +1,14 @@
 import { useForm } from 'react-hook-form';
-import useUploadModal from '../hooks/useUploadModal.tsx';
-import Modal from './Modal';
 import React, { useState } from 'react';
-import Input from './Input.js';
 import toast from 'react-hot-toast';
-import { useUser } from '../hooks/useUser.tsx'
 import uniqid from 'uniqid'
 import { useSupabaseClient } from '@supabase/auth-helpers-react';
 import { useNavigate } from 'react-router-dom';
+
+import useUploadModal from '../hooks/useUploadModal.tsx';
+import Modal from './Modal';
+import Input from './Input.js';
+import { useUser } from '../hooks/useUser.tsx'
 
 const UploadModal = () => {
   const { onClose, isOpen } = useUploadModal();
@@ -99,7 +100,9 @@ const UploadModal = () => {
       toast.success("Song Created!");
       reset();
       onClose();
-      window.location.reload();
+      // setTimeout(() => {
+      //   window.location.reload();
+      // }, 2000)
 
 
     } catch (error) {

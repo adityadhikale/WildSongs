@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+
+
 import '../assets/styles/Latest.css';
 import music from '../assets/images/music.jpg'
 import Navbar from './Navbar';

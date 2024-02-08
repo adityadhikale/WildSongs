@@ -1,7 +1,9 @@
 import React, {  useEffect, useState } from 'react';
-import { useUser } from '../hooks/useUser.tsx';
 import { useLocation } from 'react-router-dom';
 import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai'
+
+
+import { useUser } from '../hooks/useUser.tsx';
 import SongItem from './Songitem.tsx';
 import getLikedSongs from '../actions/getLikedSongs.ts';
 import useOnPlay from '../hooks/useOnPlay.tsx';
@@ -59,11 +61,11 @@ const LikedSongs = () => {
 
   return (
     <>
-      <div className='container'style={{color:'white',  marginTop:'15px'}}>
+      <div className='container' style={{color:'white',  marginTop:'15px'}}>
         <Icon color={isLiked ? '#DC1354' : 'gray'} style={{marginLeft:'10%', cursor:'pointer'}} size={40} onClick={handleLike} /> Liked Songs
       </div>
       <hr style={{color:'gray', marginLeft:'15%', width:'75%' }} />
-      <div className='cards container' style={{marginLeft:'13%'}}>
+      <div className='cards' style={{marginLeft:'5%'}}>
             <div className='mx-4 my-4 row justify-content-center'>
             {userLikedSongs.map((item, index) => (
                         <div className='col-lg-3 col-md-4 col-sm-6 col-12 adjus' key={index} >

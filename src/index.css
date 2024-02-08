@@ -8,15 +8,10 @@
 
 body {
     background-color: rgb(25, 25, 25);
-    -ms-overflow-style: none;
-    scrollbar-width: none;
     font-family: 'Josefin Sans', sans-serif;
-    ;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
 }
 
 
 body::-webkit-scrollbar {
     display: none;
-}
+  }

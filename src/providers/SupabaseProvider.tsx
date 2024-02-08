@@ -2,6 +2,7 @@ import { useState } from "react";
 import React from 'react';
 import { createClient } from '@supabase/supabase-js';
 import { SessionContextProvider } from "@supabase/auth-helpers-react";
+
 import { Database } from "../database.types";
 
 interface SupabaseProviderProps {

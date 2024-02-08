@@ -1,8 +1,9 @@
 import { Subscription, User } from "@supabase/supabase-js";
-import { UserDetails } from "../types.ts";
 import { createContext, useEffect, useState } from "react";
 import { useSessionContext, useUser as useSupaUser } from "@supabase/auth-helpers-react";
 import React, { useContext } from 'react';
+
+import { UserDetails } from "../types.ts";
 
 
 

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
+
+
 import '../assets/styles/LeftNavbar.css';
 import home from '../assets/images/home.png';
 import playlist from '../assets/images/playlist.png';
@@ -17,12 +19,12 @@ const LeftNavbar = () => {
     <>
       <nav className="navbar" data-bs-theme="dark" id="navbar">
         <div className="container-fluid">
-          <Link className="navbar-brand" id="navbar-brand" to="/WildSongs">
+          <Link className="navbar-brand" id="navbar-brand" to="/">
             <span style={{ color: '#DC1354' }}>W</span>ildSongs
           </Link>
           <ul className="navbar-nav" id="navbar-nav">
-            <li className={`nav-item ${location.pathname === '/WildSongs' ? 'active' : ''}`}>
-              <Link className="nav-link" aria-current="page" to="/WildSongs">
+            <li className={`nav-item ${location.pathname === '/' ? 'active' : ''}`}>
+              <Link className="nav-link" aria-current="page" to="/">
                 <div className="d-flex flex-row mb-3">
                   <img className="logos" src={home} alt="" />
                   <p className="textAlign">Home</p>
