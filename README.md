@@ -1,8 +1,8 @@
-# Welcome to WildSongs! 🎵
+# Welcome to GetSongs! 🎵
 
-Hey there! Welcome to WildSongs, your go-to digital music service where you can dive into millions of songs! 🌟
+Hey there! Welcome to GetSongs, your go-to digital music service where you can dive into millions of songs! 🌟
 
-## What's WildSongs?
+## What's GetSongs?
 
 WildSongs is a cool platform that lets you groove to your favorite tunes anytime, anywhere. Whether you're into pop, rock, jazz, or hip-hop, we've got you covered! 🎧
 
@@ -42,7 +42,7 @@ WildSongs is a cool platform that lets you groove to your favorite tunes anytime
 
 ## Get Started
 
-Visit WildSongs now: [WildSongs](https://wildsongs.netlify.app/)
+Visit GetSongs now: [GetSongs](https://wildsongs.netlify.app/)
 
 Start exploring the world of music with just a click! 🎶 Feel the rhythm, discover new beats, and create your ultimate playlist.
 
